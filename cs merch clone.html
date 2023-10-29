@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Merchandise | CS Society USM</title>
+        <script src="https://kit.fontawesome.com/a02ba21cb2.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        <style>
+            p{
+                font-family: Roboto;
+            }
+            .navibar{
+                background-color: rgb(16, 63, 69);
+                display: grid;
+                grid-template-columns: 20fr 3fr;
+                width:100%;
+                position: static;
+                top: 0;
+                left: 0;
+            }
+            .navibar-left{
+                display: inline-block;
+                vertical-align: middle;
+                cursor:pointer;
+            }
+            .cs-logo{
+                display:inline-block;
+                border-radius: 30px;
+                width: 50px;
+                vertical-align: middle;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                margin-left: 3%;
+                margin-right: 5px;
+            }
+            .cs-store-title{
+                color:white;
+                display: inline-block;
+                vertical-align: middle;
+                width:150px;
+            }
+            .stitle1, .stitle2{
+                display: block;
+                line-height: 0px;
+            }
+            .cart-button{
+                margin-top: 10%;
+                margin-bottom: 10%;
+                display: inline;
+                vertical-align: middle;
+                width: 97px;
+                height: 48px;
+                text-align: center;
+                background-color: rgb(255, 217, 45);
+                font-size: 14px;
+                cursor: pointer;
+                border-radius: 8px;
+            }
+            .cart-button:hover{
+                background-color: rgb(230, 217, 45);
+            }
+            .zero-orders{
+                margin-top: 30px;
+                background-color: rgb(248, 114, 114);
+                border-radius: 16px;
+                text-align: center;
+                width:35%;
+                margin-left: auto;
+                margin-right: auto;
+                display: grid;
+                grid-template-columns: 1fr 7fr;
+                line-height: 15px;
+                box-shadow: 10px 10px 10px 5;
+            }
+            .main-content{
+                margin-left:10%;
+                margin-right: 10%;
+
+            }
+            .main-content-title{
+                line-height: 0px;
+            }
+            .merch{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+
+            }
+            .merch-preview{
+                margin-right: 10px;
+                margin-left: 10px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                box-sizing:border-box;
+                border-width: 1px;
+                border-style: solid;
+                border-color: #e5e7eb;
+                border-radius: 30px;
+                box-shadow: 3px 3px 50px rgb(220, 219, 219);
+            }
+            .merch-image{
+                height:auto;
+                width:80%;
+                margin-top: 5%;
+                margin-left: 10%;
+                margin-right: 5%;
+            }
+            .merch-info{
+                margin-left: auto;
+                margin-right: auto;
+                width: 95%;
+                text-align: left;
+            }
+            .order-button{
+                display: inline-block;
+                width: 153.57px;
+                height:48px;
+                margin-left: 96.9px;
+                margin-right:96.9px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                padding-left: 10px;
+                padding-right: 10px;
+                background-color: #e5e7eb;
+                color: #b4bcca;
+                border-radius: 10px;
+                border-style: none;
+                text-align: center;
+                cursor:not-allowed;
+            }
+            .notes{
+                color: #656667;
+                text-align: center;
+                font-size: small;
+                font-style: italic;
+                margin-bottom: 50px;
+            }
+            .end{
+                background-color: black;
+                width: 100%;
+                display:grid;
+                grid-template-columns: 8fr 1fr;
+                position: static;
+                bottom: 0px;
+                left: 0px;
+            }
+            .copyright-statement{
+                text-align: start;
+                margin-left: 15px;
+                color: white;
+            }
+            .contacts{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+            }
+            .web, .instagram,.linkedin,.facebook{
+                color: white;
+                font-size:larger;
+                cursor:pointer;
+                background:transparent;
+                border:none;
+            }
+
+        </style>
+    </head>
+    <body style="background-color: #f9fafc;">
+        <div class="navibar"> 
+            <div class="navibar-left">
+                <img class="cs-logo" src="cs-logo.png">
+                <div class="cs-store-title">
+                    <p class="stitle1"><strong> USM CS SOCIETY</strong></p>
+                    <p class="stitle2"><strong> MERCHANDISE</strong></p>
+                </div>
+            </div>
+            <button class="cart-button" type="button" onclick="window.open('https://merch.cssocietyusm.com/cart/', '_blank')"> <strong><i class="fa-solid fa-cart-shopping"></i> CART</strong></button>
+        </div>
+
+        <div class="zero-orders">
+            <p class="x-logo" style="display: inline-block; margin-top: auto; margin-bottom: auto;">
+                <i class="fa-regular fa-circle-xmark" style="color: #000000;"></i>
+            </p>
+            <div class="zero-orders-text" style="display: inline-block; text-align: left;">
+                <p>We are <strong>not accepting new orders</strong> at this time.</p>
+                <p>Thank you for your support!</p>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="main-content-title">
+                <p style="font-size: 30px;">
+                    <strong>Don't miss out on the one and only CS Society Merch.</strong>
+                </p>
+                <p style="font-size: 18px; margin-top: 0px;">
+                    Your final chance to grab our limited merchandise! ✨
+                </p>
+            </div>
+
+            <div class="merch">
+                <div class="merch-preview">
+                    <img class="merch-image" src="Merchandise _ CS Society USM_files/tshirt-ss-front.webp">
+                    <div class="merch-info">
+                        <p class="merch-name"> <strong>T-Shirt Short Sleeve</strong></p>
+                        <p class="merch-price">RM26.00</p>
+                        <p class="merch-description">The royal blue microfibre shirt is comfy and stylish at the same time.</p>
+                    </div>
+                    <button class="order-button"><i class="fa-solid fa-ban" style="color: #b4bcca;"></i> <strong>UNAVAILABLE</strong></button>
+                </div>
+                <div class="merch-preview">
+                    <img class="merch-image" src="Merchandise _ CS Society USM_files/tshirt-ls-front.webp"">
+                    <div class="merch-info">
+                        <p class="merch-name"> <strong>T-Shirt Long Sleeve</strong></p>
+                        <p class="merch-price">RM26.00</p>
+                        <p class="merch-description">The royal blue microfibre shirt is comfy and stylish at the same time.</p>
+                    </div>
+                    <button class="order-button"><i class="fa-solid fa-ban" style="color: #b4bcca;"></i> <strong>UNAVAILABLE</strong></button>
+                </div>
+                <div class="merch-preview">
+                    <img class="merch-image" src="Merchandise _ CS Society USM_files/hoodie-front.webp"">
+                    <div class="merch-info">
+                        <p class="merch-name"> <strong>Hoodie</strong></p>
+                        <p class="merch-price">RM55.00</p>
+                        <p class="merch-description">Make your presence known with this zip-up hoodie.</p>
+                    </div>
+                    <button class="order-button"><i class="fa-solid fa-ban" style="color: #b4bcca;"></i> <strong>UNAVAILABLE</strong></button>
+                </div>
+                <div class="merch-preview">
+                    <img class="merch-image" src="Merchandise _ CS Society USM_files/cap.webp">
+                    <div class="merch-info">
+                        <p class="merch-name"> <strong>Cap</strong></p>
+                        <p class="merch-price">RM20.00</p>
+                        <p class="merch-description">With a cute but cool little penguin on top, this cotton cap is sure to keep you cool as well on a sunny day.</p>
+                    </div>
+                    <button class="order-button"><i class="fa-solid fa-ban" style="color: #b4bcca;"></i> <strong>UNAVAILABLE</strong></button>
+                </div>
+                <div class="merch-preview">
+                    <img class="merch-image" src="Merchandise _ CS Society USM_files/tote-bag.webp">
+                    <div class="merch-info">
+                        <p class="merch-name"> <strong>Canvas Bag</strong></p>
+                        <p class="merch-price">RM18.00</p>
+                        <p class="merch-description">This canvas bag is perfect for you to show off that you're a computer science student while carrying your daily essentials around.</p>
+                    </div>
+                    <button class="order-button"><i class="fa-solid fa-ban" style="color: #b4bcca;"></i> <strong>UNAVAILABLE</strong></button>
+                </div>
+            </div>
+        </div>
+        <div class="notes">
+            <p>
+                ** All pictures shown are for illustration purposes only. Actual product may vary due to product enhancement.
+            </p>
+        </div>
+        <div class="end">
+            <p class="copyright-statement">
+                Copyright © 2022 - 2023 Computer Science Society, USM
+            </p>
+            <div  class="contacts">
+                <button class="web" type="button" onclick="window.open('https://cssocietyusm.com/', '_blank')"><i class="fa-sharp fa-solid fa-globe" style="color: #ffffff;"></i></button>
+                <button class="instagram" type="button" onclick="window.open('https://www.instagram.com/cs.usm/', '_blank')"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></button>
+                <button class="linkedin" type="button" onclick="window.open('https://www.linkedin.com/company/cssocietyusm/', '_blank')"><i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i></button>
+                <button class="facebook" type="button" onclick="window.open('https://www.facebook.com/cs.usm.my/', '_blank')"><i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i></button>
+            </div>
+        </div>
+    </body>
+</html>
